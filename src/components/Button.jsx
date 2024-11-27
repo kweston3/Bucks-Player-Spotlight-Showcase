@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Button({ text }) {
+const Button = ({ text }) => {
   const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = () => {
@@ -15,6 +15,6 @@ function Button({ text }) {
       {text}
     </button>
   );
-}
+};
 
 export default Button;

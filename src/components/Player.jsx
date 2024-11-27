@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { fetchPlayerData } from "../playerData";
 
-function Player() {
+const Player = () => {
   const [player, setPlayer] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -53,6 +53,6 @@ function Player() {
       </p>
     </div>
   );
-}
+};
 
 export default Player;

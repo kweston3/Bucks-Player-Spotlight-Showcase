@@ -1,16 +1,18 @@
 import React from "react";
 import Button from "./components/Button";
-import Player from "./components/Player";
 
 const App = () => {
   return (
     <>
-      <main className="py-3">
-        <div className="App">
-          <h1>Bucks</h1>
-          <Button text="Click Me" />
-          <Player />
-        </div>
+      <main>
+        <h1>Bucks Player Spotlight</h1>
+        <section id="player-spotlight">
+          <div>Lillard Photo</div>
+          <div>
+            <h2>Damin Lillard Info</h2>
+            <Button text="Click Me" />
+          </div>
+        </section>
       </main>
     </>
   );
