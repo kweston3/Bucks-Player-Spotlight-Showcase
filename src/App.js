@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import PlayerSpotlight from "./components/PlayerSpotlight";
+import PlayerBio from "./components/PlayerBio";
 import { fetchPlayerData } from "./playerData";
+import Header from "./components/Header";
 
 const App = () => {
   const [selectedPlayer, setSelectedPlayer] = useState(null);
@@ -31,8 +33,9 @@ const App = () => {
   return (
     <>
       <main>
-        <h1>Bucks Player Spotlight</h1>
+        <Header />
         <PlayerSpotlight player={selectedPlayer} />
+        <PlayerBio />
       </main>
     </>
   );

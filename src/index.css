@@ -17,8 +17,8 @@ main {
 h1 {
   font-size: 65px;
   text-align: center;
-  color: #00471b;
-  border-bottom: #007dc5 5px solid;
+  color: white;
+  /* border-bottom: #007dc5 5px solid; */
 }
 
 h2 {
@@ -31,30 +31,6 @@ h2 {
 img {
   max-width: 100%;
   height: auto;
-}
-
-#player-spotlight {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 100px; /* Adds separation between image and text */
-  margin: 20px 0;
-  margin-right: 20px;
-}
-
-.player-image {
-  flex: 2;
-  display: flex;
-  justify-content: flex-end; /* Aligns the image to the right within the div */
-}
-
-.player-info {
-  flex: 2;
-  text-align: left;
-}
-
-.spotlight-paragraph {
-  margin-bottom: 25px;
 }
 
 .main-button {
@@ -101,6 +77,38 @@ img {
   color: white;
 }
 
+#header {
+  margin-top: 25px;
+  width: 100%;
+  background-color: #00471b;
+  color: white;
+  border-radius: 5px;
+}
+
+#player-spotlight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  margin: 20px 0;
+  margin-right: 20px;
+}
+
+.player-image {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.player-info {
+  flex: 2;
+  text-align: left;
+}
+
+.spotlight-paragraph {
+  margin-bottom: 25px;
+}
+
 /* Responsive Styles */
 @media (max-width: 1200px) {
   #player-spotlight {
@@ -110,7 +118,7 @@ img {
 
 @media (max-width: 900px) {
   h1 {
-    font-size: 42px;
+    font-size: 38px;
   }
 
   h2 {
@@ -118,16 +126,27 @@ img {
   }
 
   #player-spotlight {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
     align-items: center;
-    gap: 30px; /* Adjust spacing for smaller screens */
+    gap: 30px;
   }
 
   .player-image {
-    justify-content: center; /* Center the image on smaller screens */
+    justify-content: center;
   }
 
   img {
-    max-width: 90%; /* Ensure the image scales appropriately */
+    max-width: 90%;
   }
+}
+
+#player-bio {
+  margin-top: 25px;
+  width: 100%;
+  background-color: #f0ebd2;
+  border-radius: 5px;
+}
+
+.bio-info {
+  padding: 0 20px;
 }
