@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Button = ({ text }) => {
+const MainButton = ({ text }) => {
   const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = () => {
@@ -9,7 +9,7 @@ const Button = ({ text }) => {
 
   return (
     <button
-      className={`button ${isClicked ? "clicked" : ""}`}
+      className={`main-button ${isClicked ? "clicked" : ""}`}
       onClick={handleClick}
     >
       {text}
@@ -17,4 +17,4 @@ const Button = ({ text }) => {
   );
 };
 
-export default Button;
+export default MainButton;

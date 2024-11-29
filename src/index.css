@@ -18,31 +18,116 @@ h1 {
   font-size: 65px;
   text-align: center;
   color: #00471b;
+  border-bottom: #007dc5 5px solid;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 50px;
   color: #00471b;
-  border-bottom: #007dc5 4px solid;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 #player-spotlight {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  gap: 100px; /* Adds separation between image and text */
+  margin: 20px 0;
+  margin-right: 20px;
 }
 
-.button {
-  background-color: white;
-  color: green;
-  border: 2px solid green;
-  padding: 10px 20px;
-  border-radius: 5px;
+.player-image {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end; /* Aligns the image to the right within the div */
+}
+
+.player-info {
+  flex: 2;
+  text-align: left;
+}
+
+.spotlight-paragraph {
+  margin-bottom: 25px;
+}
+
+.main-button {
+  width: 130px;
+  background-color: #f0ebd2;
+  color: #00471b;
+  border: 2px solid #f0ebd2;
+  padding: 10px 0px;
+  border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  margin-right: 15px;
+  font-weight: bold;
 }
 
-.button.clicked {
-  background-color: green;
+.main-button:hover {
+  background-color: white;
+}
+
+.main-button.clicked {
+  background-color: white;
+  color: #00471b;
+}
+
+.secondary-button {
+  width: 130px;
+  background-color: white;
+  color: #00471b;
+  border: 2px solid #00471b;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: bold;
+}
+
+.secondary-button:hover {
+  background-color: #00471b;
   color: white;
+}
+
+.secondary-button.clicked {
+  background-color: #00471b;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  #player-spotlight {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  #player-spotlight {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    gap: 30px; /* Adjust spacing for smaller screens */
+  }
+
+  .player-image {
+    justify-content: center; /* Center the image on smaller screens */
+  }
+
+  img {
+    max-width: 90%; /* Ensure the image scales appropriately */
+  }
 }
