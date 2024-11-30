@@ -27,12 +27,13 @@ h2 {
   color: #00471b;
   display: inline-block;
   margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 h3 {
   font-size: 35px;
   color: #00471b;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 15px;
 }
 
@@ -64,8 +65,7 @@ img {
 }
 
 .main-button.clicked {
-  background-color: white;
-  color: #00471b;
+  border: 2px solid #00471b;
 }
 
 .secondary-button {
@@ -90,12 +90,45 @@ img {
   color: white;
 }
 
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Add spacing below the header */
+}
+
+.profile-button {
+  background-color: #00471b; /* Branding color for the button */
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-button:hover {
+  color: #00471b;
+  background-color: white;
+}
+
+.profile-button.clicked {
+  color: #00471b;
+  background-color: white;
+}
+
+.profile-button.clicked:hover {
+  background-color: #f0ebd2;
+}
+
 #header {
   margin-top: 25px;
   width: 100%;
   background-color: #00471b;
   color: white;
   border-radius: 5px;
+  border-bottom: 10px solid #f0ebd2;
 }
 
 #player-spotlight {
@@ -163,6 +196,7 @@ img {
 
 #player-bio {
   margin-top: 25px;
+  padding-top: 15px;
   width: 100%;
   background-color: #f0ebd2;
   border-radius: 5px;
@@ -174,6 +208,7 @@ img {
 
 #player-stats {
   margin-top: 25px;
+  padding-top: 15px;
   width: 100%;
   background-color: #00471b;
   color: white;
@@ -192,6 +227,7 @@ img {
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
+  margin-bottom: 25px;
   width: 100%;
   border: 3px solid #007dc5;
   border-radius: 5px;
@@ -212,30 +248,4 @@ img {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-}
-
-/* Button Styling */
-.button-container {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-}
-
-.section-button {
-  background-color: #007bff; /* Branding color for the button */
-  color: white;
-  font-size: 16px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.section-button:hover {
-  background-color: #0056b3; /* Darker shade for hover effect */
-}
-
-.section-button:focus {
-  outline: none;
 }
