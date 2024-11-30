@@ -16,8 +16,8 @@ This project was created as part of the Milwaukee Bucks Digital Team interview p
 
 - **Framework:** React
 - **GraphQL:** For querying player data from the Bucks API.
-- **Styling:** CSS used for styling.
-- **Responsive Design Techniques:** CSS Grid/Flexbox/Media Queries/etc.
+- **Styling:** CSS
+- **Responsive Design Techniques:** Flexbox/Media Queries/etc.
 
 ## API Details
 
