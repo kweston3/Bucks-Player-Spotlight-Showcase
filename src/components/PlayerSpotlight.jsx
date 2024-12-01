@@ -29,9 +29,11 @@ const PlayerSpotlight = ({ player }) => {
         <div className="player-info">
           <h2>{`${player.first_name} ${player.last_name}`}</h2>
           <p className="spotlight-paragraph">
-            This months Bucks Player Spotlight features Damian Lillard, better
-            known as "Dame Time". Dame joined the Milwaukee Bucks in 2023 as a 7
-            time all star and has scored over 20,000 points in his career.
+            This months Bucks Player Spotlight features Damian Lillard, who
+            joined the Milwaukee Bucks in 2023 and is in his 13th NBA season
+            overall. Known for his incredible shooting range and clutch
+            performances, "Dame Time" has made 7 all star games and scored over
+            20,000 points in his illustrious career.
           </p>
           <button
             className={`main-button ${
@@ -65,9 +67,33 @@ const PlayerSpotlight = ({ player }) => {
                 }`}
                 onClick={() => handleButtonClick("stats", "stats")}
               >
-                Player Stats
+                STATS
               </button>
             </div>
+            <p>
+              Damian Lamonte Ollie Lillard Sr. (born July 15, 1990[1]) is an
+              American professional basketball player for the Milwaukee Bucks of
+              the National Basket- ball Association (NBA). Regarded for his big
+              shots in the clutch, he has been nicknamed “Dame Time”. He played
+              college basketball for the Weber State Wildcats and earned
+              third-team All-American honors in 2012. He was selected by the
+              Portland Trail Blazers with the sixth overall pick in the 2012 NBA
+              draft, and was named the NBA Rookie of the Year for the 2012–13
+              season. With the team, he made seven NBA All-Star selections,
+              seven All-NBA Team selections, and is the franchise’s all-time
+              leading scorer.
+            </p>{" "}
+            <p>
+              In 2021, Lillard won a gold medal for the U.S. Olympic team in the
+              2020 Summer Olympics. That same year, he was named to the NBA 75th
+              Anni- versary Team.[2] In 2023, after a trade request, he was
+              traded to the Milwaukee Bucks. Off the court, Lillard is also a
+              rapper, under the stage name Dame D.O.L.L.A. He released his first
+              studio album, The Letter O (2016), which charted on the Billboard
+              200, while his second and third albums, Con- firmed (2017) and Big
+              D.O.L.L.A. (2019), placed on the indie charts. In 2021, he
+              released a fourth album, Different on Levels the Lord Allowed.
+            </p>{" "}
             <p>
               2023-24 (Milwaukee Bucks): In his first season with the Bucks,
               played and started 73 games and averaged 24.3 points (16th in
@@ -127,7 +153,7 @@ const PlayerSpotlight = ({ player }) => {
                 }`}
                 onClick={() => handleButtonClick("bio", "bio")}
               >
-                Biography
+                PLAYER BIO
               </button>
             </div>
 

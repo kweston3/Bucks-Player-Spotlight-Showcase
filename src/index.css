@@ -90,6 +90,34 @@ img {
   color: white;
 }
 
+.profile-button {
+  width: 130px;
+  background-color: white;
+  color: #00471b;
+  border: 2px solid #00471b;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.profile-button:hover {
+  color: white;
+  background-color: #00471b;
+}
+
+.profile-button.clicked {
+  width: 130px;
+  color: #00471b;
+  background-color: #f0ebd2;
+  border: 2px solid #f0ebd2;
+}
+
+.profile-button.clicked:hover {
+  background-color: white;
+}
+
 .profile-header {
   display: flex;
   justify-content: space-between;
@@ -101,31 +129,6 @@ img {
   margin-top: 50px;
   margin-left: 15px;
   margin-bottom: 0px;
-}
-
-.profile-button {
-  background-color: #00471b;
-  color: white;
-  font-size: 16px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.profile-button:hover {
-  color: #00471b;
-  background-color: white;
-}
-
-.profile-button.clicked {
-  color: #00471b;
-  background-color: white;
-}
-
-.profile-button.clicked:hover {
-  background-color: #f0ebd2;
 }
 
 #header {
@@ -142,7 +145,7 @@ img {
   justify-content: space-between;
   align-items: center;
   gap: 100px;
-  margin: 20px 0;
+  margin: 10px 0;
   margin-right: 20px;
 }
 
@@ -161,51 +164,9 @@ img {
   margin-bottom: 25px;
 }
 
-/* Responsive Styles */
-@media (max-width: 1200px) {
-  #player-spotlight {
-    gap: 30px;
-  }
-
-  #details-info {
-    gap: 20px;
-  }
-}
-
-@media (max-width: 900px) {
-  h1 {
-    font-size: 38px;
-  }
-
-  h2 {
-    font-size: 30px;
-  }
-
-  h3 {
-    font-size: 24px;
-  }
-
-  #player-spotlight {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .player-image {
-    justify-content: center;
-  }
-
-  img {
-    max-width: 90%;
-  }
-
-  .line {
-    display: none;
-  }
-}
-
 #player-bio {
   margin-top: 25px;
+  margin-bottom: 15px;
   padding-top: 15px;
   width: 100%;
   background-color: #f0ebd2;
@@ -218,6 +179,7 @@ img {
 
 #player-stats {
   margin-top: 25px;
+  margin-bottom: 15px;
   padding-top: 15px;
   width: 100%;
   background-color: #00471b;
@@ -269,4 +231,47 @@ img {
   width: 2px;
   height: 70px;
   margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  #player-spotlight {
+    gap: 30px;
+  }
+
+  #details-info {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  #player-spotlight {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .player-image {
+    justify-content: center;
+  }
+
+  img {
+    max-width: 90%;
+  }
+
+  .line {
+    display: none;
+  }
 }
