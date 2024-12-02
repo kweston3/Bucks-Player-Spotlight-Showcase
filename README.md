@@ -6,7 +6,7 @@ This project was created as part of the Milwaukee Bucks Digital Team interview p
 
 - **API Integration:** Pulls player data dynamically using the provided GraphQL endpoint.
 - **Responsive Design:** Ensures seamless user experience across devices of various screen sizes.
-- **Interactive Elements:** Allows users to explore player bios and detailed information interactively.
+- **Interactive Elements:** Allows users to explore player bios and stats interactively.
 - **Brand-Aligned Styling:** Incorporates the Milwaukee Bucks branding colors:
   - **Primary:** `#00471b`
   - **Secondary:** `#f0ebd2`
@@ -14,7 +14,7 @@ This project was created as part of the Milwaukee Bucks Digital Team interview p
 
 ## Technologies Used
 
-- **Framework:** React
+- **Framework/Library:** React
 - **GraphQL:** For querying player data from the Bucks API.
 - **Styling:** CSS
 - **Responsive Design Techniques:** Flexbox/Media Queries/etc.
