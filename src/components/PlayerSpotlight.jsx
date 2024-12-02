@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import PlayerDetails from "./PlayerDetails";
 
 const PlayerSpotlight = ({ player }) => {
-  const [section, setSection] = useState(""); // Track the section to display
-  const [clickedButton, setClickedButton] = useState(""); // Track the clicked button
+  const [section, setSection] = useState("bio");
+  const [clickedButton, setClickedButton] = useState("");
 
   // Handle button click and set the section to show, and scroll to the bottom
   const handleButtonClick = (sectionName, buttonType) => {
